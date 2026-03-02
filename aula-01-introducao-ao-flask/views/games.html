@@ -8,8 +8,22 @@
     <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 </head>
 <body>
+    <a href="/">Voltar</a>
+    <h2>Games</h2>
+    <ul>
+      <li>{{ titulo }}</li>
+      <li>{{ genero }}</li>
+      <li>{{ ano }}</li>
+    </ul>
 
-    <h2>games</h2>
+    <h3>Gamers</h3>
+    <ol>
+      {% for jogador in jogadores: %}
+      <li>{{ jogador }}</li>
+      {% endfor %}
+    </ol>
+
+    <br>
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

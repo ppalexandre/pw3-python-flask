@@ -8,7 +8,11 @@
     <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 </head>
 <body>
-    consoles
+    <a href="/">Voltar</a>
+    <h2>Consoles</h2>
+    {% for chave, valor in console.items() %}
+    {{chave}} : {{valor}} <br>
+    {% endfor %}
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
