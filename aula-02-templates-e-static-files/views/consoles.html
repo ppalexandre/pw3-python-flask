@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Consoles</h2>
+{% for chave, valor in console.items() %}
+{{chave}} : {{valor}} <br>
+{% endfor %}
+
+{% endblock content %}

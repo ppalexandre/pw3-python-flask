@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Games</h2>
+<ul>
+  <li>{{ titulo }}</li>
+  <li>{{ genero }}</li>
+  <li>{{ ano }}</li>
+</ul>
+
+<h3>Gamers</h3>
+<ol>
+  {% for jogador in jogadores: %}
+  <li>{{ jogador }}</li>
+  {% endfor %}
+</ol>
+{% endblock content %}
